@@ -10,31 +10,60 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>회원등록</h1>
-        <h2>members</h2>
+    <div class="header-top">
+        <ul class="d-flex flex-end">
+            <li>
+                <a href="http://localhost:3000/signin">로그인</a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <a href="http://localhost:3000/signup">회원가입</a>
+            </li>
+        </ul>
+    </div>
+    <header class="d-flex gap-3">
+        <div id="logo">사이트로고</div>
+        <nav>
+            <ul class="d-flex">
+                <li>
+                    <a href="#">처음으로</a>
+                </li>
+                <li>
+                    <a href="#">서비스</a>
+                </li>
+                <li>
+                    <a href="#">특허</a>
+                </li>
+                <li>
+                    <a href="#">고객센터</a>
+                </li>
+            </ul>
+        </nav>
     </header>
     <main>
-        <form action="">
+        <h1>회원등록</h1>
+        <h2>members</h2>
+        <form action="http://localhost:3000/create" method="post">
             <div>
-                <label>아이디</label>
-                <input type="text">
+                <label for="user_id">아이디</label>
+                <input type="text" name="user_id">
             </div>
             <div>
-                <label for="">비밀번호</label>
-                <input type="password">
+                <label for="user_pwd">비밀번호</label>
+                <input type="password" name="user_pwd">
             </div>
             <div>
-                <label for="">비밀번호 확인</label>
-                <input type="password" name="" id="">
+                <label for="user_pwd2">비밀번호 확인</label>
+                <input type="password" name="user_pwd2" id="user_pwd2">
             </div>
             <div>
-                <label for="">이메일</label>
-                <input type="email" name="" id="">
+                <label for="user_email">이메일</label>
+                <input type="email" name="user_email" id="user_email">
             </div>
             <div>
-                <label for="">sns</label>
-                <input type="url" name="" id="">
+                <label for="user_sns">sns</label>
+                <input type="url" name="user_sns" id="user_sns">
             </div>
             <div class="d-flex gap-1 justfiy-center">
                 <input type="submit" value="등록">
