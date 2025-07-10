@@ -1,0 +1,32 @@
+:root {
+    --primary-btn-background : #f00
+}
+
+input[type="url"]{
+    width: calc(100% - 1.6rem);
+}
+
+input[type="reset"] {
+    background-color: var(--primary-btn-background);
+    border: 2px solid var(--primary-btn-background);
+    color: var(--color-bg);
+    margin: 0.5rem 0;
+    padding: 1rem 2rem;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.gap-1 {
+    gap: 1rem;
+}
+.gap-2 {
+    gap: 2rem;
+}
+.gap-3 {
+    gap: 3rem;
+}
+.justfiy-center {
+    justify-content: center;
+}
