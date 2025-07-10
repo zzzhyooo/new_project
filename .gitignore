@@ -1,0 +1,8 @@
+# ignore files
+.zip
+.hwp
+.xls
+
+#ignore folders(=directories)
+node_modules/
+
